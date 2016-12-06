@@ -5,13 +5,26 @@ var activeNodeColor = "green";
 
 var graph;
 
-// var steps = ["n1", "n2", "n3", "n4", "n6", "n10"];
+// Example
+// var steps = [ "n1", "n2", "n3", "n4", "n6", "n10" ];
+
+// Hanoi
 var steps = [ "n1", "n2", "n3", "n4", "n3", "n4", "n5", "n6", "n5", "n6", "n7", "n8", "n7", "n8", "n6", "n8", "n9", "n8", "n9", "n10", "n9", "n10", "n11", "n12", "n11", "n12", "n13", "n14", "n13", "n14", "n12", "n14", "n13", "n12", "n14", "n12", "n11", "n10", "n15", "n16", "n17", "n18", "n17", "n18", "n19" ];
+
+// N queens
+// var steps = [ "n1", "n2", "n3", "n4", "n5" ];
+
+// 3 jars
+// var steps = [ "n1", "n2", "n3", "n4", "n3", "n4", "n1", "n4", "n5", "n2", "n5", "n6", "n3", "n6", "n4", "n6", "n5", "n6", "n7", "n3", "n7", "n8" ];
+
 var stepIndex = 0;
 
 $(document).ready(function(){
     $("#graph").graphviz({
+        // url: "svg/graph.svg",
         url: "svg/hanoi_graph.svg",
+        // url: "svg/n-queens_graph.svg",
+        // url: "svg/3-jars_graph.svg",
         ready: function() {
 
             graph = this;
