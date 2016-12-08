@@ -22,7 +22,7 @@ var stepIndex = 0;
 $(document).ready(function(){
     $("#graph").graphviz({
         // url: "svg/graph.svg",
-        url: "svg/hanoi_graph.svg",
+        url: "svg/hanoi_graph-v2.svg",
         // url: "svg/n-queens_graph.svg",
         // url: "svg/3-jars_graph.svg",
         ready: function() {
